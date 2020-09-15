@@ -1,0 +1,33 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root{
+  height: 100vh;
+
+}
+
+header{
+  width: 100%;
+  padding: 45px 400px;
+  display: flex;
+  justify-content: space-between;
+
+
+}
+
+ul{
+  display: flex;
+}
+
+li{
+  list-style-type: none;
+  margin: 0 10px;
+  color: blue;
+}
+
+li:hover{
+  cursor: pointer;
+}

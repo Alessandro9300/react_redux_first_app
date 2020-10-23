@@ -9,15 +9,28 @@ import attractions from '../risorse/array'
 
 
 class Main extends React.Component {
+
+  state = {
+    attrazione: attractions
+  }
+
+  removeAttraction = (attraction) => {
+    this.setState((state) => ({
+      attrazione: state.attrazione.filter(
+        (attr) => attr.id !== attraction.id)
+    }))
+    console.log(this.state.attrazione);
+  }
+
   render(){
     return (
       <div class='body'>
         <Header/>
-        <Aside attrazione={attractions}/>
+        <Aside onRemoveAttraction = {this.removeAttraction} attrazione={this.state.attrazione}/>
         <Titolo intestazione='I mie articoli' sottoTitolo='Test Props' />
         <Body/>
         <SecondBody/>
-        <Footer/>
+        <Footer variabileACaso='CiaoSonoLaVariabileACaso'/>
       </div>
     )
   }

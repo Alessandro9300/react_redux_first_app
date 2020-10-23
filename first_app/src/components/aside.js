@@ -2,6 +2,11 @@ import React from 'react';
 
 
 class Aside extends React.Component {
+
+
+
+
+
   render() {
     return (
       <div class='aside'>
@@ -18,7 +23,7 @@ class Aside extends React.Component {
                 </div>
               </div>
 
-              <button type="button" name="button"></button>
+              <button onClick = {()=>this.props.onRemoveAttraction(attrazione)} type="button" name="button"></button>
 
             </li>)}
 

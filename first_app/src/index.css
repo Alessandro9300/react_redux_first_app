@@ -1,11 +1,11 @@
-/* *{
+
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-
-header{
+ header{
   width: 1200px;
   padding: 30px 0;
   margin: auto;
@@ -70,7 +70,7 @@ main, .second_main{
   height: 30px;
   border: 0;
   background-color: transparent;
-  background-image: url('./close.svg');
+  background-image: url('./components/icons/close.svg');
   background-size: 100% 100%;
   cursor: pointer;
 
@@ -95,6 +95,9 @@ main, .second_main{
   margin-right: 20px;
 }
 
+.aside {
+  opacity: 0.1;
+}
 
 @media screen and (max-width: 1400px) {
   main, header{
@@ -111,4 +114,4 @@ main, .second_main{
     transform: translate(-50%);
   }
 
-} */
+}

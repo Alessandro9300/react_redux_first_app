@@ -1,5 +1,7 @@
 import React from 'react';
 
+
+
 export class Titolo extends React.Component{
   render(){
     return (
@@ -12,6 +14,8 @@ export class Titolo extends React.Component{
   }
 }
 
+
+
 export class Articolo extends React.Component{
   render(){
     return (
@@ -20,6 +24,8 @@ export class Articolo extends React.Component{
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </p>
+
+
       </div>
     )
   }
@@ -34,6 +40,18 @@ export class Body extends React.Component{
         <Articolo nomeArticolo = 'articolo 3'/>
         <Articolo nomeArticolo = 'articolo 4'/>
       </main>
+    )
+  }
+}
+
+export class SecondBody extends React.Component{
+  render(){
+    return (
+      <div class='second_main'>
+        <Articolo nomeArticolo = 'articolo 5'/>
+        <Articolo nomeArticolo = 'articolo 6'/>
+        <Articolo nomeArticolo = 'articolo 7'/>
+      </div>
     )
   }
 }
